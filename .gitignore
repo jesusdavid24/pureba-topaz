@@ -1,0 +1,6 @@
+target/
+*.class
+Laboratorio.java.txt
+.vscode/
+.idea/
+.DS_Store
