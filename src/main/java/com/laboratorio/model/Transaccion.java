@@ -33,7 +33,7 @@ public class Transaccion {
     private Long version;
 
     protected Transaccion() {
-        // requerido por JPA
+
     }
 
     public Transaccion(BigDecimal monto, EstadoTransaccion estado, LocalDateTime fechaCreacion) {

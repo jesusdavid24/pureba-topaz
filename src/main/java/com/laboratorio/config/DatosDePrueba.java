@@ -20,7 +20,6 @@ public class DatosDePrueba {
         return args -> {
             LocalDateTime ahora = LocalDateTime.now();
             repository.saveAll(List.of(
-                    // id 1: APROBADA y reciente -> reversión válida (204)
                     new Transaccion(new BigDecimal("1500.00"), EstadoTransaccion.APROBADA, ahora.minusHours(2)),
                     // id 2: APROBADA pero con más de 24 h -> 422
                     new Transaccion(new BigDecimal("800.00"), EstadoTransaccion.APROBADA, ahora.minusHours(30)),

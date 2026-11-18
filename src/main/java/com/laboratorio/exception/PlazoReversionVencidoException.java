@@ -1,6 +1,5 @@
 package com.laboratorio.exception;
 
-/** Pasaron más de 24 horas desde la creación (422). */
 public class PlazoReversionVencidoException extends RuntimeException {
 
     public PlazoReversionVencidoException(Long id, long horasTranscurridas) {
